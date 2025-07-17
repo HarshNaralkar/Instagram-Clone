@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram-Inspired UI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">Instagram</div>
+    <nav>
+      <ul>
+        <li class="active"><i class="fas fa-home"></i> Home</li>
+        <li><i class="fas fa-search"></i> Explore</li>
+        <li><i class="fas fa-clapperboard"></i> Reels</li>
+        <li><i class="fas fa-paper-plane"></i> Messages</li>
+        <li><i class="fas fa-heart"></i> Notifications</li>
+        <li><i class="fas fa-plus-square"></i> Create</li>
+        <li><i class="fas fa-user-circle"></i> Profile</li>
+      </ul>
+    </nav>
+    
+    <div class="more">
+      <i class="fas fa-bars"></i> More
+      <div class="meta-link">
+        <img src="meta-logo.jpg" alt="Meta Logo" class="meta-icon"><span>Also From Meta</span>
+        </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="stories">
+      <!-- Repeat this block for each story -->
+      <div class="story">
+        <img src="tobi.jpg" alt="Story 1">
+        <span>Tobi</span>
+      </div>
+      <div class="story">
+        <img src="andriu.jpg" alt="Story 2">
+        <span>andriu_garfield</span>
+      </div>
+      <div class="story">
+        <img src="captain.jpg" alt="Story 2">
+        <span>Captain</span>
+      </div>
+      <div class="story">
+        <img src="drstrange.jpg" alt="Story 2">
+        <span>Dr.Strange</span>
+      </div>
+      <div class="story">
+        <img src="tony.jpg" alt="Story 2">
+        <span>robertdowneyjr</span>
+      </div>
+      <div class="story">
+        <img src="dococt.jpg" alt="Story 2">
+        <span>DocOct</span>
+      </div>
+      <div class="story">
+        <img src="electro.jpg" alt="Story 2">
+        <span>Electro</span>
+      </div>
+      <div class="story">
+        <img src="doc.jpg" alt="Story 2">
+        <span>Doc</span>
+      </div>
+      <!-- Add more stories as needed -->
+    </div>
+    <div class="feed">
+    <!-- Post Start -->
+    <div class="post">
+  <div class="post-header">
+    <img src="tony.jpg" alt="User">
+    <div class="post-user">
+      <span class="username">robertdowneyjr <img src="bluetick.jpg" alt="Verified" class="verified-tick"></span>
+      <span class="dot">•</span>
+      <span class="time">2h</span>
+    </div>
+    <i class="fas fa-ellipsis-h post-options"></i>
+  </div>
+  <img class="post-img" src="tonypost.jpg" alt="Post Image">
+  <div class="post-actions">
+    <i class="far fa-heart like-btn"></i>
+    <i class="far fa-comment"></i>
+    <i class="far fa-paper-plane"></i>
+    <div class="bookmark-container">
+      <i class="far fa-bookmark bookmark"></i>
+      <div class="collections-popup">
+        <div class="collections-header">
+          <span>Collections</span>
+          <span class="add-collection">+</span>
+        </div>
+        <div class="collection-list">
+          <div class="collection-item">
+            <img src="tonypost.jpg" alt="Marvel">
+            <span>Marvel</span>
+          </div>
+          <div class="collection-item">
+            <img src="andriu_garfieldpost.jpg" alt="Fan Club">
+            <span>Fan Club</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="post-info">
+    <span class="likes"><span class="like-count">56,253</span> likes</span>
+    <div class="caption">
+      <span class="username">robertdowneyjr <img src="bluetick.jpg" alt="Verified" class="verified-tick"></span>
+      All The Best for Your UI/UX Exam <span class="emoji">👍</span>
+    </div>
+    <div class="comments-link">View all 444 comments</div>
+    <input class="add-comment" type="text" placeholder="Add a comment...">
+  </div>
+</div>
+
+
+    <div class="post">
+        <div class="post-header">
+        <img src="electro.jpg" alt="User">
+        <div class="post-user">
+            <span class="username">Electro <img src="bluetick.jpg" alt="Verified" class="verified-tick"></span>
+            <span class="dot">•</span>
+            <span class="time">2h</span>
+        </div>
+        <i class="fas fa-ellipsis-h post-options"></i>
+        </div>
+        <img class="post-img" src="electropost.jpg" alt="Post Image">
+        <div class="post-actions">
+        <i class="far fa-heart"></i>
+        <i class="far fa-comment"></i>
+        <i class="far fa-paper-plane"></i>
+        <div class="bookmark-container">
+          <i class="far fa-bookmark bookmark"></i>
+          <div class="collections-popup">
+            <div class="collections-header">
+              <span>Collections</span>
+              <span class="add-collection">+</span>
+            </div>
+            <div class="collection-list">
+              <div class="collection-item">
+                <img src="tonypost.jpg" alt="Bgmi">
+                <span>Marvel</span>
+              </div>
+              <div class="collection-item">
+                <img src="andriu_garfieldpost.jpg" alt="Formula">
+                <span>Fan Club</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="post-info">
+        <span class="likes">25,785 likes</span>
+        <div class="caption">
+            <span class="username">Electro <img src="bluetick.jpg" alt="Verified" class="verified-tick"></span>
+            Thanks Iron-Man For Your ARC Reactor <span class="emoji">⚡🪫</span>
+        </div>
+        <div class="comments-link">View all 654 comments</div>
+        <input class="add-comment" type="text" placeholder="Add a comment...">
+        </div>
+    </div>
+
+    <div class="post">
+        <div class="post-header">
+        <img src="andriu.jpg" alt="User">
+        <div class="post-user">
+            <span class="username">andriu_garfield <img src="bluetick.jpg" alt="Verified" class="verified-tick"></span>
+            <span class="dot">•</span>
+            <span class="time">3h</span>
+        </div>
+        <i class="fas fa-ellipsis-h post-options"></i>
+        </div>
+        <img class="post-img" src="andriu_garfieldpost.jpg" alt="Post Image">
+        <div class="post-actions">
+        <i class="far fa-heart"></i>
+        <i class="far fa-comment"></i>
+        <i class="far fa-paper-plane"></i>
+        <div class="bookmark-container">
+          <i class="far fa-bookmark bookmark"></i>
+          <div class="collections-popup">
+            <div class="collections-header">
+              <span>Collections</span>
+              <span class="add-collection">+</span>
+            </div>
+            <div class="collection-list">
+              <div class="collection-item">
+                <img src="tonypost.jpg" alt="Bgmi">
+                <span>Marvel</span>
+              </div>
+              <div class="collection-item">
+                <img src="andriu_garfieldpost.jpg" alt="Formula">
+                <span>Fan Club</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="post-info">
+        <span class="likes">15,845 likes</span>
+        <div class="caption">
+            <span class="username">andriu_garfield <img src="bluetick.jpg" alt="Verified" class="verified-tick"> </span>
+            Making Spider Web Shooter to Fly <span class="emoji">🕸️🕸️🕸️</span>
+        </div>
+        <div class="comments-link">View all 999 comments</div>
+        <input class="add-comment" type="text" placeholder="Add a comment...">
+        </div>
+
+    </div>
+    <div class="collections-popup">
+  <div class="collections-header">
+    <span>Collections</span>
+    <span class="add-collection">+</span>
+  </div>
+  <div class="collection-list">
+    <div class="collection-item">
+      <img src="bgmi.jpg" alt="Bgmi">
+      <span>Bgmi</span>
+    </div>
+    <div class="collection-item">
+      <img src="formula.jpg" alt="Formula">
+      <span>Formula</span>
+    </div>
+    <!-- Add more collections as needed -->
+  </div>
+</div>
+
+    <!-- Post End -->
+    </div>
+
+  </div>
+  <div class="rightbar">
+    <div class="profile-switch">
+      <img src="tom_holland.jpg" alt="Profile">
+      <div>
+        <span class="username">Tom_Holland <img src="bluetick.jpg" alt="Verified" class="verified-tick"></span><br>
+        <span class="role">Spider-Man</span>
+      </div>
+      <button>Switch</button>
+    </div>
+    <div class="suggestions">
+      <span>Suggested for you</span>
+      <div class="suggestion">
+        <img src="loki.jpg" alt="User">
+        <div>
+          <span class="username">Tom_Holland <img src="bluetick.jpg" alt="Verified" class="verified-tick"></span><br>
+          <span class="followed">Followed by Thor +1...</span>
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+      <div class="suggestion">
+        <img src="thor.jpg" alt="User">
+        <div>
+          <span class="username">Chris Hemsworth <img src="bluetick.jpg" alt="Verified" class="verified-tick"></span><br>
+          <span class="followed">Followed by Loki +1...</span>
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+      <div class="suggestion">
+        <img src="mj.jpg" alt="User">
+        <div>
+          <span class="username">MJ <img src="bluetick.jpg" alt="Verified" class="verified-tick"></span><br>
+          <span class="followed">Followed by Spidy +1...</span>
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+      <div class="suggestion">
+        <img src="ned.jpg" alt="User">
+        <div>
+          <span class="username">Ned <img src="bluetick.jpg" alt="Verified" class="verified-tick"></span><br>
+          <span class="followed">Followed by Spidy +1...</span>
+        </div>
+        <button class="follow-btn">Follow</button>
+    </div>
+    <div class="suggestion">
+        <img src="deadpool.jpg" alt="User">
+        <div>
+          <span class="username">Deadpool <img src="bluetick.jpg" alt="Verified" class="verified-tick"></span><br>
+          <span class="followed">Followed by Madam X +1...</span>
+        </div>
+        <button class="follow-btn">Follow</button>
+    </div>
+    <div class="suggestion">
+        <img src="vector.jpg" alt="User">
+        <div>
+          <span class="username">Vector <img src="bluetick.jpg" alt="Verified" class="verified-tick"></span><br>
+          <span class="followed">Followed by Sand Man +1...</span>
+        </div>
+        <button class="follow-btn">Follow</button>
+    </div>
+      <!-- Add more suggestions as needed -->
+       <div class="bottom-right-info">
+        <a href="#" class="about-link">About</a> <a href="#" class="about-link">Help</a> <a href="#" class="about-link">Press</a> <a href="#" class="about-link">API</a> <a href="#" class="about-link">Jobs</a><br>
+        <span>&copy; 2025 YourSite. All rights reserved.</span>
+        
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+document.querySelectorAll('.post-actions i').forEach(function(icon) {
+  icon.addEventListener('click', function() {
+    // For like and bookmark, toggle active on this icon only
+    if (icon.classList.contains('fa-heart') || icon.classList.contains('fa-bookmark')) {
+      icon.classList.toggle('active');
+      // Optionally, toggle between regular and solid for heart/bookmark
+      if (icon.classList.contains('fa-heart')) {
+        icon.classList.toggle('far');
+        icon.classList.toggle('fas');
+      }
+      if (icon.classList.contains('fa-bookmark')) {
+        icon.classList.toggle('far');
+        icon.classList.toggle('fas');
+      }
+    } else {
+      // For comment and share, just add active color for a moment
+      icon.classList.add('active');
+      setTimeout(() => icon.classList.remove('active'), 500);
+    }
+  });
+});
+document.querySelectorAll('.follow-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    if (!btn.classList.contains('followed')) {
+      btn.classList.add('followed');
+      btn.textContent = 'Following';
+    } else {
+      btn.classList.remove('followed');
+      btn.textContent = 'Follow';
+    }
+  });
+});
+// Show/hide collections popup on bookmark click
+document.querySelectorAll('.bookmark-container').forEach(function(container) {
+  const bookmark = container.querySelector('.bookmark');
+  const popup = container.querySelector('.collections-popup');
+  bookmark.addEventListener('click', function(e) {
+    e.stopPropagation();
+    // Hide all other popups
+    document.querySelectorAll('.collections-popup').forEach(p => p.style.display = 'none');
+    // Toggle this popup
+    popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+  });
+});
+
+// Hide popup when clicking outside
+document.body.addEventListener('click', function() {
+  document.querySelectorAll('.collections-popup').forEach(p => p.style.display = 'none');
+});
+
+
+// Like Button and Like Count
+document.querySelectorAll('.post').forEach(function(post) {
+  const likeBtn = post.querySelector('.like-btn');
+  const likeCountSpan = post.querySelector('.like-count');
+  let count = parseInt(likeCountSpan.textContent.replace(/,/g, ''), 10);
+
+  likeBtn.addEventListener('click', function() {
+    const isLiked = likeBtn.classList.toggle('fas');
+    likeBtn.classList.toggle('far');
+    likeBtn.classList.toggle('active', isLiked);
+    if (isLiked) {
+      count += 1;
+    } else {
+      count -= 1;
+    }
+    likeCountSpan.textContent = count.toLocaleString();
+  });
+});
+
+// Follow Button
+document.querySelectorAll('.follow-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    if (!btn.classList.contains('followed')) {
+      btn.classList.add('followed');
+      btn.textContent = 'Following';
+    } else {
+      btn.classList.remove('followed');
+      btn.textContent = 'Follow';
+    }
+  });
+});
+
+// Collections Popup
+document.querySelectorAll('.bookmark-container').forEach(function(container) {
+  const bookmark = container.querySelector('.bookmark');
+  const popup = container.querySelector('.collections-popup');
+  bookmark.addEventListener('click', function(e) {
+    e.stopPropagation();
+    document.querySelectorAll('.collections-popup').forEach(p => p.style.display = 'none');
+    popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+  });
+});
+document.body.addEventListener('click', function() {
+  document.querySelectorAll('.collections-popup').forEach(p => p.style.display = 'none');
+});
+
+</script>
+
+</html>

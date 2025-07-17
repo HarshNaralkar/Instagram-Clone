@@ -1,0 +1,479 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #18191a;
+  color: #fff;
+  display: flex;
+  height: 100vh;        /* Full viewport height */
+  overflow: hidden;     /* Prevent body scroll */
+}
+
+.sidebar {
+  width: 220px;
+  background: #000;
+  height: 100vh;        /* Fixed height */
+  position: relative;   /* Keep it relative so it doesn't scroll */
+  padding: 24px 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: visible;    /* No scroll */
+  flex-shrink: 0;       /* Don't shrink */
+}
+
+.logo {
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 30px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  padding: 12px 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.sidebar nav ul li.active, .sidebar nav ul li:hover {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.sidebar nav ul li i {
+  margin-right: 14px;
+}
+
+.more, .meta {
+  margin-top: auto;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.meta-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.meta-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+}
+
+.main {
+  /* Your existing styles */
+  background-color: #000;
+  flex: 2;
+  border-left: 1px solid #4c4c4c;
+  padding: 32px 24px;
+  width: 75%;
+  max-width: none;
+  height: 100vh;
+  overflow-y: auto;
+
+  /* Hide scrollbar for Chrome, Edge, Safari */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+.main::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.stories {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 32px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-image: linear-gradient(50deg, #FFAB00, #FE5B00, #FD0114, #E1009E) 1;
+  /* For better browser support, you can also use background-clip for inner fill: */
+  background: linear-gradient(50deg, #FFAB00, #FE5B00, #FD0114, #E1009E);
+  padding: 2px; /* Optional: for extra border thickness */
+  box-sizing: border-box;
+}
+
+
+.story span {
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+
+.feed {
+  width: 100%;
+  max-width: 500px;
+  margin: 0;
+}
+
+.post {
+  width: 800px;
+  background: #000000;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 16px 15px 8px 16px;
+  position: relative;
+}
+
+.post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-image: linear-gradient(50deg, #FFAB00, #FE5B00, #FD0114, #E1009E) 1;
+  /* For better browser support, you can also use background-clip for inner fill: */
+  background: linear-gradient(50deg, #FFAB00, #FE5B00, #FD0114, #E1009E);
+  padding: 1px; /* Optional: for extra border thickness */
+  box-sizing: border-box;
+}
+
+.verified-tick {
+  width: 18px;           /* Adjust size as needed */
+  height: 18px;
+  margin-left: 4px;      /* Space from username */
+  vertical-align: middle;
+  display: inline-block;
+}
+
+
+.post-user {
+  padding: 10px ;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.post-user .verified-tick {
+  width: 18px;           /* Adjust as needed */
+  height: 18px;
+  margin-left: 4px;
+  vertical-align: middle;
+  display: inline-block;
+  border: none;          /* No border */
+  background: none;      /* No background */
+  padding: 0;            /* No padding */
+  box-sizing: content-box;
+}
+
+.dot {
+  font-size: 1.2rem;
+  color: #888;
+  margin: 0 6px;
+}
+
+.time {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.post-options {
+  margin-left: auto;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.post-img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  background: #18191a;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 18px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.bookmark {
+  margin-left: 600px;
+}
+
+.post-info {
+  padding: 0 16px 12px 16px;
+  font-size: 1rem;
+}
+
+.likes {
+  font-weight: bold;
+  display: block;
+  margin: 8px 0 4px 0;
+}
+
+.caption {
+  margin-bottom: 6px;
+}
+
+.caption .username {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.emoji {
+  font-size: 1.1rem;
+}
+
+.comments-link {
+  color: #aaa;
+  font-size: 0.97rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.add-comment {
+  width: 95%;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #18191a;
+  color: #fff;
+  margin-top: 6px;
+  font-size: 1rem;
+}
+
+.caption {
+  display: block;
+  margin-top: 2px;
+}
+
+.rightbar {
+  width: 380px;
+  background: #000000;
+  padding: 32px 24px;
+  border-left: 1px solid #121212;
+  height: 100vh;        /* Full viewport height */
+  overflow-y: auto;     /* Enable vertical scroll */
+  flex-shrink: 0;       /* Don't shrink */
+}
+
+.rightbar .verified-tick {
+  width: 18px;           /* Adjust as needed */
+  height: 18px;
+  margin-left: 4px;
+  vertical-align: middle;
+  display: inline-block;
+  border: none;          /* No border */
+  background: none;      /* No background */
+  padding: 0;            /* No padding */
+  box-sizing: content-box;
+}
+
+.profile-switch {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.profile-switch img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.profile-switch .username {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.profile-switch .role {
+  font-size: 0.92rem;
+  color: #aaa;
+}
+
+.profile-switch button {
+  margin-left: auto;
+  background: none;
+  border: 0px solid #3897f0;
+  color: #3897f0;
+  border-radius: 8px;
+  padding: 6px 16px;
+  cursor: pointer;
+}
+
+.suggestions {
+  margin-top: 12px;
+}
+
+.suggestions span {
+  font-size: 1.05rem;
+  color: #aaa;
+}
+
+.suggestion {
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
+}
+
+.suggestion img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.suggestion .username {
+  font-weight: bold;
+}
+
+.suggestion .followed {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.suggestion button {
+  margin-left: auto;
+  background: none;
+  border: 0px solid #3897f0;
+  color: #3897f0;
+  border-radius: 8px;
+  padding: 4px 14px;
+  cursor: pointer;
+}
+
+
+.post-actions i {
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.like-btn.fas, .like-btn.active {
+  color: #ed4956 !important;
+}
+
+
+.post-actions i.active.fa-comment {
+  color: #0095f6; /* Instagram blue for comment */
+}
+.post-actions i.active.fa-paper-plane {
+  color: #0095f6; /* Instagram blue for share */
+}
+.post-actions i.active.fa-bookmark {
+  color: #ffffff; /* Instagram yellow for bookmark */
+}
+
+.follow-btn {
+  background: none;
+  border: 1px solid #3897f0;
+  color: #3897f0;
+  border-radius: 8px;
+  padding: 4px 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  font-weight: 500;
+}
+.follow-btn.followed {
+  background: #262626;
+  border: 0px solid #000;
+  color: #888;
+}
+
+.bookmark-container {
+  position: relative;
+  display: inline-block;
+}
+
+.collections-popup {
+  display: none;
+  position: absolute;
+  bottom: 36px; /* Adjust to position above the icon */
+  left: 85%;
+  transform: translateX(-50%);
+  min-width: 210px;
+  background: #232323;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  z-index: 1000;
+  padding: 12px 0 8px 0;
+  font-size: 1rem;
+}
+
+.collections-popup::after {
+  content: "";
+  position: absolute;
+  left: 90%;
+  bottom: -12px;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: #232323 transparent transparent transparent;
+}
+
+.collections-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px 8px 16px;
+  font-weight: bold;
+  font-size: 1.08rem;
+}
+
+.add-collection {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.add-collection:hover {
+  background: #333;
+}
+
+.collection-list {
+  padding: 0 8px;
+}
+
+.collection-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.collection-item:hover {
+  background: #2e2e2e;
+}
+.collection-item img {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
